@@ -133,7 +133,9 @@ Este proyecto está bajo la licencia **MIT**.
 ---
 
 ¡Gracias por participar en este desafío! 🎉  
+
 Diviértete explorando las frases clásicas y aprendiendo mientras desarrollas.  
+
 ¡Que la fuerza te acompañe! 🌟
 
 
