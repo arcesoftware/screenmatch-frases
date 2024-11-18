@@ -65,21 +65,79 @@ El proyecto se divide en los siguientes componentes principales:
    git clone https://github.com/tu-usuario/frases-clasicas.git  
    cd frases-clasicas  
 
+## Configuración de la Base de Datos  
 
-2. **Configura la base de datos:**
+### Pasos para configurar la base de datos:  
 
-Abre **PG Admin** y crea una base de datos llamada frases.
-Utiliza el **Query Tool** para ejecutar el script inicial de inserción de datos (disponible más abajo).
+1. **Crea la base de datos:**  
+   - Abre **PG Admin** y crea una base de datos llamada `frases`.  
 
-3. **Ejecuta la aplicación:**
-   ```bash
-   mvn spring-boot:run
+2. **Ejecuta el script inicial:**  
+   - Utiliza el **Query Tool** en PG Admin para ejecutar el script inicial de inserción de datos (disponible más abajo).  
 
-4. **Accede al frontend:** 
-  Abre un navegador y ve a http://localhost:8080
+## Ejecuta la Aplicación  
+    ```bash 
+  mvn spring-boot:run
 
-###Población de la Base de Datos 💾
-Utiliza el siguiente script en **PG Admin** para insertar frases iniciales:
- ```bash
-insert into frases(id, frase, personaje, titulo, poster) values (1, 'Amigos no mienten', 'Eleven', 'Stranger Things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');  
-insert into frases(id, frase, personaje, titulo, poster) values (2, 'Bienvenida al mundo real. Es una droga. Te va a encantar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');  
+---
+
+## Acceso al Frontend  
+
+- Abre un navegador y ve a: [http://localhost:8080](http://localhost:8080)  
+
+---
+
+## Población de la Base de Datos 💾  
+
+Utiliza el siguiente script en **PG Admin** para insertar frases iniciales:  
+
+    ```sql
+insert into frases(id, frase, personaje, titulo, poster) values 
+(1, 'Amigos no mienten', 'Eleven', 'Stranger Things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');
+
+insert into frases(id, frase, personaje, titulo, poster) values 
+(2, 'Bienvenida al mundo real. Es una droga. Te va a encantar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
+
+-- Agrega más registros según sea necesario.
+
+## Agregar Nuevas Frases  
+
+Sigue este formato para agregar nuevas frases:  
+
+    ```sql
+insert into frases(id, frase, personaje, titulo, poster) values (id, 'frase', 'personaje', 'título', 'poster');
+
+## Obtén los Pósters desde el sitio OMDb API
+
+- Busca el título en **inglés** y utiliza el enlace proporcionado en el **JSON devuelto** para asegurar la uniformidad de los tamaños de las imágenes.
+
+### Ejemplo:
+
+    ```sql
+insert into frases(id, frase, personaje, titulo, poster) values 
+(11, 'La vida pasa muy rápido. Si no nos detenemos para disfrutarla de vez en cuando, pasa y ni la ves!', 'Ferris Bueller', 'Viviendo la vida loca', 'https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg');
+
+## Contribuciones 🤝
+
+¿Tienes una idea para mejorar el proyecto?  
+¡Las contribuciones son bienvenidas!
+
+- Abre un **Pull Request** o reporta un **Issue** en el repositorio.
+
+---
+
+## Licencia 📄
+
+Este proyecto está bajo la licencia **MIT**.
+
+---
+
+¡Gracias por participar en este desafío! 🎉  
+Diviértete explorando las frases clásicas y aprendiendo mientras desarrollas.  
+¡Que la fuerza te acompañe! 🌟
+
+
+
+
+
+
