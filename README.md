@@ -76,7 +76,7 @@ El proyecto se divide en los siguientes componentes principales:
    - Utiliza el **Query Tool** en PG Admin para ejecutar el script inicial de inserción de datos (disponible más abajo).  
 
 ## Ejecuta la Aplicación  
-    ```bash 
+  ```bash 
   mvn spring-boot:run
 
 ---
@@ -91,7 +91,7 @@ El proyecto se divide en los siguientes componentes principales:
 
 Utiliza el siguiente script en **PG Admin** para insertar frases iniciales:  
 
-    ```sql
+```sql
 insert into frases(id, frase, personaje, titulo, poster) values 
 (1, 'Amigos no mienten', 'Eleven', 'Stranger Things', 'https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg');
 
@@ -104,7 +104,7 @@ insert into frases(id, frase, personaje, titulo, poster) values
 
 Sigue este formato para agregar nuevas frases:  
 
-    ```sql
+```sql
 insert into frases(id, frase, personaje, titulo, poster) values (id, 'frase', 'personaje', 'título', 'poster');
 
 ## Obtén los Pósters desde el sitio OMDb API
@@ -113,7 +113,7 @@ insert into frases(id, frase, personaje, titulo, poster) values (id, 'frase', 'p
 
 ### Ejemplo:
 
-    ```sql
+```sql
 insert into frases(id, frase, personaje, titulo, poster) values 
 (11, 'La vida pasa muy rápido. Si no nos detenemos para disfrutarla de vez en cuando, pasa y ni la ves!', 'Ferris Bueller', 'Viviendo la vida loca', 'https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg');
 
