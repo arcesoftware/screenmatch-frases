@@ -20,7 +20,8 @@ Ejemplo de frases:
 
   <img src="https://github.com/arcesoftware/screenmatch-frases/blob/main/picture.png"  style="margin:auto;">
 </p>
-Todas las frases y detalles se almacenan en una **base de datos local** configurada mediante **PG Admin** y manipulada con herramientas de consulta SQL.
+
+Todas las frases y detalles se almacenan en una *base de datos local* configurada mediante *PG Admin* y manipulada con herramientas de consulta SQL.
 
 ---
 
