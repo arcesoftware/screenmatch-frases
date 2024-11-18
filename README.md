@@ -78,7 +78,7 @@ El proyecto se divide en los siguientes componentes principales:
 ## Ejecuta la Aplicación  
   ```bash 
   mvn spring-boot:run
-
+ ```
 ---
 
 ## Acceso al Frontend  
@@ -97,7 +97,7 @@ insert into frases(id, frase, personaje, titulo, poster) values
 
 insert into frases(id, frase, personaje, titulo, poster) values 
 (2, 'Bienvenida al mundo real. Es una droga. Te va a encantar', 'Monica', 'Friends', 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg');
-
+ ```
 -- Agrega más registros según sea necesario.
 
 ## Agregar Nuevas Frases  
@@ -106,7 +106,7 @@ Sigue este formato para agregar nuevas frases:
 
 ```sql
 insert into frases(id, frase, personaje, titulo, poster) values (id, 'frase', 'personaje', 'título', 'poster');
-
+ ```
 ## Obtén los Pósters desde el sitio OMDb API
 
 - Busca el título en **inglés** y utiliza el enlace proporcionado en el **JSON devuelto** para asegurar la uniformidad de los tamaños de las imágenes.
@@ -116,7 +116,7 @@ insert into frases(id, frase, personaje, titulo, poster) values (id, 'frase', 'p
 ```sql
 insert into frases(id, frase, personaje, titulo, poster) values 
 (11, 'La vida pasa muy rápido. Si no nos detenemos para disfrutarla de vez en cuando, pasa y ni la ves!', 'Ferris Bueller', 'Viviendo la vida loca', 'https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg');
-
+ ```
 ## Contribuciones 🤝
 
 ¿Tienes una idea para mejorar el proyecto?  
